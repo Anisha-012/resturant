@@ -1,0 +1,90 @@
+
+<head>
+	<title>Cart </title>
+</head>
+<body bgcolor="#FF9999">
+<center><h1>M Y &nbsp;&nbsp;&nbsp;R E S T A U R A N T </h1>
+</center>
+<div align="right">
+<a href="sign_up.html">Sign Up</a>
+&nbsp;&nbsp;&nbsp;
+<a href="Login.html">Login</a>
+&nbsp;&nbsp;&nbsp;
+<input type="text" placeholder="Search..">
+</div><br><br>
+<div align="right">
+<a href="index.html">Home</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="About.html">About Us</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Food.html">Cuisine</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Reach.html">Reach Out</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Cart.html">Food Cart</a>
+&nbsp;&nbsp;&nbsp;
+</div>
+	  <br><br><br>
+      
+					<table border="2" align="center">
+					  <tr>
+						<td></td>
+						<td></td>
+						<td>Product</td>
+						<td>Price</td>
+						<td>Quantity</td>
+						<td>Total</td>
+					  </tr>
+					  <tr>
+						<td>	
+							<span ></span>
+						</td>
+						<td>
+						<img src="chicken.jpg" height="100" width="100" alt="Chilli Chicken" class="my_cart_items"/>
+						</td>
+						<td>
+							<p>Chilli Chicken</p>
+						</td>
+						<td>
+							<p>Rs. 250</p>
+						</td>
+						<td>
+							<div >
+							  <div class="input-group-addon add" onClick="btnClick('+')">+</div>
+								<center><lable id="q_item" value="1">1</lable></center>
+							  <div class="input-group-addon remove" onClick="btnClick('-')">-</div>
+							</div>
+						</td>
+						<td>
+							<p>Rs. <span id="total_price">250</span></p>
+						</td>
+					  </tr>
+					  <tr>
+						<td colspan="4"></td>
+						<td><button>Update Cart</button></td>
+						<td><button>Proceed to Checkout</button></td>
+					  </tr>
+					</table>
+						
+				  </div>
+				</div>	
+      </div>
+			
+		 
+		  
+
+	<script type="text/javascript">
+		
+		function btnClick(x)
+		{
+			if(x=='+')
+			{
+				var a=document.getElementById("q_item").innerHTML;
+				document.getElementById("q_item").innerHTML=parseInt(a)+1;
+			}
+			else
+			{
+				document.getElementById("q_item").innerHTML-=1;
+			}
+		}
+	</script>
